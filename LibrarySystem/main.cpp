@@ -15,7 +15,7 @@ void displayMenu() {
     cout << "4. Remove User\n";
     cout << "5. Borrow Book\n";
     cout << "6. Return Book\n";
-    cout << "7. Display Books\n"; // Added option to display books
+    cout << "7. Display Books\n";
     cout << "8. Exit\n";
     cout << "Enter your choice: ";
 }
@@ -125,6 +125,8 @@ int main() {
             break;
         }
         case 7: {
+            // Display books in the library
+            library.displayBooks();
             break;
         }
         case 8: {

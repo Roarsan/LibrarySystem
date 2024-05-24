@@ -1,6 +1,5 @@
 #include "BorrowHistory.h"
 #include <string>
-#include "Book.h"
 
 /**
  * @brief Parameterized constructor for the BorrowHistory class.

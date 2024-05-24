@@ -10,6 +10,8 @@
  */
 class BorrowHistory {
 public:
+    Book book;            ///< The borrowed book.
+    std::string borrowDate; ///< The date when the book was borrowed.
 
     /**
      * @brief Parameterized constructor for the BorrowHistory class.

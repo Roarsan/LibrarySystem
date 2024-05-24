@@ -3,7 +3,6 @@
 
 #include <string>
 #include <unordered_map>
-#include <unordered_set>
 #include "Book.h"
 #include "User.h"
 #include "BorrowHistory.h"
@@ -14,7 +13,6 @@
  */
 class LibrarySystem {
 public:
-
     /**
      * @brief Adds a book to the library.
      * @param book The book to add.
@@ -55,12 +53,15 @@ public:
      * @return True if the book was successfully returned, false otherwise.
      */
     bool returnBook(int userID, const std::string& isbn);
-    void displayBooks(); // Added semicolon here
 
     /**
      * @brief Displays the list of books in the library.
      */
     void displayBooks();
+
+private:
+    std::unordered_map<std::string, Book> books; ///< The collection of books in the library.
+    std::unordered_map<int, User> users;         ///< The collection of users in the library.
 };
 
 #endif // LIBRARY_SYSTEM_H
