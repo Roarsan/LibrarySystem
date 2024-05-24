@@ -5,13 +5,13 @@
 #include <vector>
 #include "BorrowHistory.h"
 
+/**
+ * @class User
+ * @brief Represents a user in the library system.
+ */
 class User {
 public:
-    int userID;
-    std::string name;
-    std::vector<BorrowHistory> borrowHistory;
 
-    User() : userID(0), name("") {}  // Default constructor
     User(int userID, const std::string& name);
 };
 

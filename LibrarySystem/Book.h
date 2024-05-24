@@ -4,14 +4,13 @@
 
 #include <string>
 
+/**
+ * @class Book
+ * @brief Represents a book in the library system.
+ */
 class Book {
 public:
-    std::string isbn;
-    std::string title;
-    std::string author;
-    int copies;
 
-    Book() : isbn(""), title(""), author(""), copies(0) {}  // Default constructor
     Book(const std::string& isbn, const std::string& title, const std::string& author, int copies);
 };
 

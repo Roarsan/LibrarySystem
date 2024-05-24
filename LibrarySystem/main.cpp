@@ -4,6 +4,9 @@
 
 using namespace std;
 
+/**
+ * @brief Displays the main menu for the Library Management System.
+ */
 void displayMenu() {
     cout << "\nLibrary Management System\n";
     cout << "1. Add Book\n";
@@ -38,6 +41,7 @@ int main() {
 
         switch (choice) {
         case 1: {
+            // Add a new book
             string isbn, title, author;
             int copies;
             cout << "Enter ISBN: ";
@@ -55,6 +59,7 @@ int main() {
             break;
         }
         case 2: {
+            // Remove an existing book
             string isbn;
             cout << "Enter ISBN of book to remove: ";
             cin >> isbn;
@@ -63,6 +68,7 @@ int main() {
             break;
         }
         case 3: {
+            // Add a new user
             int userID;
             string name;
             cout << "Enter User ID: ";
@@ -76,6 +82,7 @@ int main() {
             break;
         }
         case 4: {
+            // Remove an existing user
             int userID;
             cout << "Enter User ID to remove: ";
             cin >> userID;
@@ -84,6 +91,7 @@ int main() {
             break;
         }
         case 5: {
+            // Borrow a book
             int userID;
             string isbn, borrowDate;
             cout << "Enter User ID: ";
@@ -101,6 +109,7 @@ int main() {
             break;
         }
         case 6: {
+            // Return a borrowed book
             int userID;
             string isbn;
             cout << "Enter User ID: ";
@@ -116,14 +125,15 @@ int main() {
             break;
         }
         case 7: {
-            library.displayBooks(); // Display books option
             break;
         }
         case 8: {
+            // Exit the program
             cout << "Exiting...\n";
             break;
         }
         default:
+            // Handle invalid menu choice
             cout << "Invalid choice. Please try again.\n";
         }
     } while (choice != 8);
