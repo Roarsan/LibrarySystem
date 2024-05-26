@@ -1,4 +1,5 @@
 #include "User.h"
+#include <string>
 
 /**
  * @brief Constructs a User object with a given userID and name.

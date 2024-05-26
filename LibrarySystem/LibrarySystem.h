@@ -5,6 +5,8 @@
 #include <unordered_map>
 #include "Book.h"
 #include "User.h"
+#include <string>
+
 #include "BorrowHistory.h"
 
 /**

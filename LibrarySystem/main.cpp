@@ -1,6 +1,7 @@
 #include <iostream>
 #include <limits> // For clearing input buffer
 #include "LibrarySystem.h"
+#include <string>
 
 using namespace std;
 

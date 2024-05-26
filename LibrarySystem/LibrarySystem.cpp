@@ -1,5 +1,6 @@
 #include "LibrarySystem.h"
 #include <iostream>
+#include <string>
 
 /**
  * @brief Adds a new book to the library.

@@ -1,4 +1,5 @@
 #include "Book.h"
+#include <string>
 
 /**
  * @brief Parameterized constructor for the Book class.
